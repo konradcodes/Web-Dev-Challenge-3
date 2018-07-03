@@ -495,12 +495,29 @@ template {
         .header__navbar li {
           font-size: 1.4rem;
           margin: 0 1rem; } }
+      @media only screen and (min-width: 37.5em) {
+        .header__navbar li {
+          font-size: 1.7rem;
+          margin: 0 1.5rem; } }
+      @media only screen and (min-width: 50em) {
+        .header__navbar li {
+          font-size: 2rem;
+          margin: 0 2rem; } }
+      @media only screen and (min-width: 68.75em) {
+        .header__navbar li {
+          font-size: 2.2rem;
+          margin: 0 2.2rem; } }
     .header__navbar a {
       text-decoration: none;
       color: #b2b2b2;
       transition: all 0.3s; }
+      .header__navbar a:hover {
+        color: #4a4a4a; }
     .header__navbar-icon {
       height: 1.5rem; }
+      @media only screen and (min-width: 37.5em) {
+        .header__navbar-icon {
+          height: 2rem; } }
 
 .footer {
   padding: 4rem 0;

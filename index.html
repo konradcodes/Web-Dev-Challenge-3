@@ -18,10 +18,10 @@
                   <nav class="header__navbar">
                         <ul>
                               <li>
-                                    <a href="#">Shop</a>
+                                    <a href="#section-about">Shop</a>
                               </li>
                               <li>
-                                    <a href="#">Collection</a>
+                                    <a href="#section-categories">Collection</a>
                               </li>
                               <li>
                                     <a href="#">Blog</a>
@@ -38,7 +38,7 @@
             <h1 class="heading-primary">FRESH FURNITURE</h1>
       </header>
       <main>
-            <section class="section-about">
+            <section class="section-about" id="section-about">
                   <h2 class="heading-secondary">about us</h2>
                   <div class="about__items">
                         <div class="about__items-box">
@@ -74,7 +74,7 @@
                         </div>
                   </div>
             </section>
-            <section class="section-categories">
+            <section class="section-categories" id="section-categories">
                   <h2 class="heading-secondary">categories</h2>
                   <div class="categories__items">
                         <figure class="categories__item">
@@ -96,6 +96,17 @@
             </section>
       </main>
       <footer class="footer">&copy; IKAE 2018 | All rights reserved. </footer>
+      <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                  anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                              behavior: 'smooth'
+                        });
+                  });
+            });
+      </script>
 </body>
 
 </html>
